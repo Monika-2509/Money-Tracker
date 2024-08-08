@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="icon" href="./Favicon.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper cyan darken-4">
+            <a href="#" class="brand-logo center">Money Tracker</a>
+            <ul class="right ">
+                <li><a href="" class="clear-btn btn teal darken-1">Clear All</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-title">
+                    Add Task and Money
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="input-field col s6">
+                            <input placeholder="Add item" id="item-name" type="text">
+
+                        </div>
+                        <div class="input-field col s6">
+                            <input placeholder="Add Money" id="item-money" type="number">
+
+                        </div>
+
+                    </div>
+
+                    <button class="btn add-btn teal darken-1"><i class="fa-solid fa-plus"></i> Add Task</button>
+                    <button class="btn update-btn orange darken-1"><i class="fa-solid fa-pen-to-square"></i> Update</button>
+                    <button class="btn delete-btn red darken-1"><i class="fa-solid fa-xmark"></i> Delete</button>
+                    <button class="btn back-btn grey darken-1 "><i class="fa-solid fa-arrow-left"></i> Back</button>
+
+                </form>
+            </div>
+        </div>
+            <h3 class="center-align">Total Money : <span class="total-money">0</span>rs</h3>
+            <ul id="item-list" class="collection">
+                <!-- <li class="collection-item" id="item-1" >
+                      <Strong>Bike</Strong> : <em>300000 rs</em>
+                      <a href="#" class="secodary-content right">
+                                 <i class="fa-solid fa-pencil edit-items"></i>
+                      </a>
+                </li> -->
+            </ul>
+      
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
